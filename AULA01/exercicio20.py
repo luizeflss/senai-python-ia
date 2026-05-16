@@ -5,7 +5,7 @@ while True:
     print("1 - Cadastrar usuarios")
     print("2 - Listar usuarios")
     print("3 - Buscar usuarios")
-    print("4 - remover  usuarios")
+    print("4 - Remover  usuarios")
     print("5 - Sair")
     print("-------------------------")
 
@@ -26,7 +26,7 @@ while True:
         else:
             print("Usuarios cadastrados:")
             for i, usuario in enumerate(usuarios):
-                print(f"{i}. {usuario['nome']} - {usuario['idade']} anos - {usuario['cidade']}")
+                print(f"{i+1}. {usuario['nome']} - {usuario['idade']} anos - {usuario['cidade']}")
                 print()
     elif opcao == "3":
         nome_busca = input("Digite o nome do usuario que deseja buscar: ")
