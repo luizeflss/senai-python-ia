@@ -1,8 +1,3 @@
-Aqui está o código completo estruturado em Markdown (`GitHub Flavored Markdown`) para você criar o seu arquivo de documentação. Ele foi organizado com cabeçalhos claros, blocos de código para os prompts e formatação adequada para as respostas da IA.
-
-Basta copiar o conteúdo abaixo e salvar como **`desafios_frameworks.md`** no seu repositório do GitHub:
-
-```markdown
 # 🛠️ Relatório de Laboratório: Engenharia de Prompts Avançada
 **Curso:** Python + Inteligência Artificial  
 **Atividade:** Aplicação Prática de Frameworks de Prompting (RACE, CARE, CREATE e CO-STAR)  
@@ -193,7 +188,3 @@ Retorne a resposta estruturada em Markdown, usando negritos para destacar os rec
 * **Passo 2:** Conectar o projetor diretamente à entrada de vídeo de cada notebook dos alunos utilizando **cabos HDMI ou VGA**.
 * **Passo 3:** Usar o próprio hardware local do computador do aluno para renderizar os slides e rodar os servidores locais (localhost) dos protótipos de TI.
 * **Passo 4:** Realizar a transição física dos cabos entre os grupos de forma organizada para que cada um apresente direto de sua máquina de desenvolvimento.
-
-```
-
-```

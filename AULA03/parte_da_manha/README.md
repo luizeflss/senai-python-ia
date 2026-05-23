@@ -166,7 +166,7 @@
 
 ---
 
-## m Exercício 9 — Criando um Prompt Completo
+## Exercício 9 — Criando um Prompt Completo
 
 ### Parâmetros Definidos
 * `personalidade` = *"Você é um ninja silencioso"*
