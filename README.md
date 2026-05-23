@@ -46,14 +46,9 @@ Repositório de estudos e exercícios desenvolvidos durante o curso de **Python 
 ```
 📦 senai-python-ia/
  ┣ 📁 fundamentos/         → variáveis, tipos, condicionais, loops
- ┣ 📁 funcoes/             → funções, escopo, recursão
- ┣ 📁 poo/                 → classes, herança, polimorfismo
- ┣ 📁 bibliotecas/         → numpy, pandas, matplotlib
  ┣ 📁 machine-learning/    → modelos, treinamento, avaliação
  ┗ 📁 projetos/            → aplicações completas
 ```
-
-> ⚠️ A estrutura pode variar conforme o andamento das aulas.
 
 <br/>
 
