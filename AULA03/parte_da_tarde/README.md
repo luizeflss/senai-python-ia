@@ -3,16 +3,6 @@
 **Atividade:** Aplicação Prática de Frameworks de Prompting (RACE, CARE, CREATE e CO-STAR)  
 **Modelo Utilizado:** Llama 3.1 8B Instruct (NVIDIA API)
 
----
-
-## 📋 Sumário dos Desafios
-1. [Desafio 1 — Uso de Personas (RACE)](#-desafio-1--uso-de-personas-framework-race)
-2. [Desafio 2 — Tarefas Complexas (CARE)](#-desafio-2--tarefas-complexas-framework-care)
-3. [Desafio 3 — Controle de Formato (CREATE)](#-desafio-3--controle-de-formato-framework-create)
-4. [Desafio 4 — Uso de Contexto (CO-STAR)](#-desafio-4--uso-de-contexto-framework-co-star)
-
----
-
 ## 🍳 Desafio 1 — Uso de Personas (Framework RACE)
 
 ### ✉️ Prompt Final Enviado

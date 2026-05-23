@@ -2,22 +2,6 @@
 **Curso:** Python + Inteligência Artificial  
 **Ambiente de Teste:** Llama 3.1 8B Instruct (NVIDIA API) / Biblioteca `openai` com `python-dotenv`
 
----
-
-## 📋 Sumário dos Exercícios
-1. [Exercício 1 — Mudando a Personalidade](#-exercício-1--mudando-a-personalidade)
-2. [Exercício 2 — Testando Idiomas](#-exercício-2--testando-idiomas)
-3. [Exercício 3 — Resposta Super Curta](#-exercício-3--resposta-super-curta)
-4. [Exercício 4 — História Longa](#-exercício-4--história-longa)
-5. [Exercício 5 — Criando Novos Temas](#-exercício-5--criando-novos-temas)
-6. [Exercício 6 — Misturando Personagem e Tema](#-exercício-6--misturando-personagem-e-tema)
-7. [Exercício 7 — Alterando o Estilo da Escrita](#-exercício-7--alterando-o-estilo-da-escrita)
-8. [Exercício 8 — Detectando Limitações da IA](#-exercício-8--detectando-limitações-da-ia)
-9. [Exercício 9 — Criando um Prompt Completo](#-exercício-9--criando-um-prompt-completo)
-10. [Exercício 10 — Desafio Final em Grupo](#-exercício-10--desafio-final-em-grupo)
-
----
-
 ## 🎭 Exercício 1 — Mudando a Personalidade
 
 ### Saídas da IA por Cenário
