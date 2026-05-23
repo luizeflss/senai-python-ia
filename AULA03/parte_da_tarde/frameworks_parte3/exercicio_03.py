@@ -7,11 +7,14 @@ RELATÓRIO:
   mente cansada pós-trabalho, gerando técnicas práticas como a micro-pomodoro.
 """
 
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-import time
-from API import API
 
-cliente = OpenAI(api_key=API, base_url="https://integrate.api.nvidia.com/v1")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+
+cliente = OpenAI(api_key=API_KEY, base_url="https://integrate.api.nvidia.com/v1")
 modelo_nvidia = "meta/llama-3.1-8b-instruct"
 
 print("====== EXPERIMENTO 3: COM VS SEM CONTEXTO ======")
@@ -24,8 +27,6 @@ res_sem_ctx = cliente.chat.completions.create(
     messages=[{"role": "user", "content": prompt_sem_contexto}]
 )
 print(f"\n--- Resposta Sem Contexto ---\n{res_sem_ctx.choices[0].message.content}\n" + "-"*40)
-
-time.sleep(5)
 
 # --- PASSO B: COM CONTEXTO ---
 prompt_com_contexto = (

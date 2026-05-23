@@ -7,11 +7,14 @@ RELATÓRIO:
   fica estruturada, dividindo o nome do pilar e o resumo diretamente.
 """
 
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-import time
-from API import API
 
-cliente = OpenAI(api_key=API, base_url="https://integrate.api.nvidia.com/v1")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+
+cliente = OpenAI(api_key=API_KEY, base_url="https://integrate.api.nvidia.com/v1")
 modelo_nvidia = "meta/llama-3.1-8b-instruct"
 
 print("====== EXPERIMENTO 4: COM VS SEM DEFINIÇÃO DE FORMATO (CREATE) ======")
@@ -24,8 +27,6 @@ res_sem_fmt = cliente.chat.completions.create(
     messages=[{"role": "user", "content": prompt_sem_formato}]
 )
 print(f"\n--- Resposta Sem Formato ---\n{res_sem_fmt.choices[0].message.content}\n" + "-"*40)
-
-time.sleep(5)
 
 # --- PASSO B: COM FORMATO ---
 role_inst = "Você é um instrutor de programação focado em didática visual."

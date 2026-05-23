@@ -7,11 +7,14 @@ RELATÓRIO:
   eliminando jargões intimidantes e focando no reaproveitamento de código.
 """
 
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-import time
-from API import API
 
-cliente = OpenAI(api_key=API, base_url="https://integrate.api.nvidia.com/v1")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+
+cliente = OpenAI(api_key=API_KEY, base_url="https://integrate.api.nvidia.com/v1")
 modelo_nvidia = "meta/llama-3.1-8b-instruct"
 
 print("====== EXPERIMENTO 2: LINGUAGEM SIMPLES VS TÉCNICA (CARE) ======")
@@ -24,8 +27,6 @@ res_tecnico = cliente.chat.completions.create(
     messages=[{"role": "user", "content": prompt_tecnico}]
 )
 print(f"\n--- Resposta Técnica ---\n{res_tecnico.choices[0].message.content}\n" + "-"*40)
-
-time.sleep(5)
 
 # --- PASSO B: LINGUAGEM SIMPLES ---
 prompt_simples = (

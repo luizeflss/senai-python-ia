@@ -7,11 +7,14 @@ RELATÓRIO:
   reclamando do tempo de resposta lento do papiro e da falta de backup físico.
 """
 
+import os
+from dotenv import load_dotenv
 from openai import OpenAI
-import time
-from API import API
 
-cliente = OpenAI(api_key=API, base_url="https://integrate.api.nvidia.com/v1")
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+
+cliente = OpenAI(api_key=API_KEY, base_url="https://integrate.api.nvidia.com/v1")
 modelo_nvidia = "meta/llama-3.1-8b-instruct"
 
 print("====== EXPERIMENTO 5: DIFERENTES PERSONAS ======")
@@ -29,8 +32,6 @@ res_persona_a = cliente.chat.completions.create(
     ]
 )
 print(f"\n--- Resposta (Persona Historiador) ---\n{res_persona_a.choices[0].message.content}\n" + "-"*40)
-
-time.sleep(5)
 
 # --- PERSONA B: TÉCNICO DE TI ---
 persona_tecnico = "Você é um técnico em informática muito rabugento de 50 anos que odeia papel."
