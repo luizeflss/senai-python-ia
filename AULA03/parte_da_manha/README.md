@@ -1,8 +1,3 @@
-Aqui está o código completo do seu arquivo **`README.md`** atualizado. Já incluí a saída do prompt no Exercício 10 seguindo exatamente o mesmo padrão visual e estilizado das outras questões.
-
-Agora sim, sua documentação está 100% completa e pronta para o GitHub!
-
-```markdown
 # 🚀 Relatório de Laboratório: Engenharia de Prompts com IA
 **Curso:** Python + Inteligência Artificial  
 **Ambiente de Teste:** Llama 3.1 8B Instruct (NVIDIA API) / Biblioteca `openai` com `python-dotenv`
@@ -213,9 +208,3 @@ tema_historia = "plano para sair do underworld e reencontrar seu irmão perdido 
 
 * **O que realmente aconteceu?**
 * **R:** A IA correspondeu muito bem às expectativas. Ela capturou perfeitamente o tom solene do personagem (*"Eu, Vergil, filho de Sparda..."*) e utilizou palavras condizentes com o universo dele (*"poderes demoníacos"*, *"trevas"*, *"Underworld"*). Além disso, a restrição física foi seguida à risca: o texto gerado foi estruturado em **um único parágrafo contendo exatamente 49 palavras**, ficando abaixo do teto estipulado de 60 palavras sem cortar a mensagem principal.
-
-
-
-```
-
-```
