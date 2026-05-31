@@ -2,6 +2,7 @@ from pathlib import Path
 import sqlite3
 import pandas as pd
 import yfinance as yf
+import time
 
 from agno.tools.pandas import PandasTools
 from agno.tools.sql import SQLTools
@@ -73,11 +74,15 @@ def preparar_banco():
 
 preparar_banco()
 
+# Dá uma pequena pausa de segurança para o SQLite consolidar o arquivo em disco
+time.sleep(2)
+
 agent = Agent(
     model=OpenAIChat(
         id="meta/llama-3.1-8b-instruct",
         api_key=API_KEY,
-        base_url="https://integrate.api.nvidia.com/v1"
+        base_url="https://integrate.api.nvidia.com/v1",
+        timeout=60.0 # Diz ao Agno para esperar até 60 segundos antes de desistir da chamada
     ),
     tools=[
         YFinanceTools(
