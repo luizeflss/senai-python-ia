@@ -67,29 +67,37 @@ O repositório está estruturado para cobrir desde os conceitos manuais de promp
 
 Para garantir a reprodução e execução correta de todos os laboratórios e agentes contidos neste portfólio, as seguintes bibliotecas do ecossistema Python são exigidas:
 
-### 🧠 Core de Inteligência Artificial
-- **`agno`**: Framework de orquestração de Agentes autônomos, gerenciamento de conhecimento e integração de ferramentas (*tools*).
-- **`openai`**: SDK oficial de conexão com endpoints compatíveis, utilizado para fazer a ponte de comunicação de streaming com a API da NVIDIA.
-- **`python-dotenv`**: Gerenciador de variáveis de ambiente de segurança para carregar chaves criptográficas (`API_KEY`) a partir de arquivos `.env` locais, evitando vazamento de credenciais.
+### 🧠 Core de IA e Orquestração (Agentes e LangChain)
+- **`agno`**: Framework de orquestração de Agentes autônomos e integração de ferramentas.
+- **`openai`**: SDK oficial de conexão com endpoints compatíveis (ponte com a API da NVIDIA).
+- **`langchain`**, **`langchain-community`**, **`langchain-openai`**: Ecossistema completo para construção de aplicações baseadas em LLMs, cadeias lógicas e agentes SQL.
 
-### 📊 Coleta, Raspagem e Análise de Dados
-- **`yfinance`**: Biblioteca de integração com a API do Yahoo Finance para download de dados históricos de fechamento e volume de ativos de mercado.
-- **`pandas`**: Manipulação e análise estruturada de matrizes de dados (DataFrames), essencial na unificação e tratamento de tabelas.
-- **`requests`**: Biblioteca cliente HTTP para disparo de requisições e download do código fonte de páginas web.
-- **`beautifulsoup4`**: Mecanismo de parsing de estruturas de árvores HTML para extração e limpeza de textos puros (*Web Scraping*).
+### 🗂️ RAG (Retrieval-Augmented Generation) e Documentos
+- **`pypdf`**: Leitura e extração de texto de arquivos PDF.
+- **`faiss-cpu`**: Banco de dados vetorial de alta performance (Facebook AI Similarity Search) para armazenar os embeddings localmente.
+- **`langchain-huggingface`** e **`sentence-transformers`**: Modelos de conversão de texto em vetores (Embeddings) de código aberto.
 
-### 🎙️ Interface Multimídia
-- **`gTTS`** (*Google Text-to-Speech*): Biblioteca utilizada para converter os outputs de texto gerados pela Inteligência Artificial em arquivos de áudio locais falados (`.mp3`).
+### 🖥️ Interface Visual e Automação (RPA)
+- **`streamlit`**: Framework web para criação rápida de interfaces gráficas (Front-end) interativas para os agentes em Python puro.
+- **`pyautogui`** e **`pyperclip`**: Automação de interface de usuário (RPA), controle de mouse/teclado e manipulação segura da área de transferência (clipboard).
+
+### 📊 Banco de Dados, Coleta e Análise (Scraping)
+- **`sqlalchemy`**: Toolkit SQL e Mapeador Objeto-Relacional (ORM) para comunicação robusta com bancos de dados.
+- **`yfinance`**: Integração com a API do Yahoo Finance para dados históricos de mercado.
+- **`pandas`**: Manipulação e análise estruturada de matrizes de dados (DataFrames).
+- **`requests`** e **`beautifulsoup4`**: Cliente HTTP e mecanismo de parsing HTML para extração de textos puros (Web Scraping).
+
+### ⚙️ Utilitários e Multimídia
+- **`python-dotenv`**: Gerenciador de variáveis de ambiente para segurança de chaves de API.
+- **`gTTS`**: Conversão de texto em arquivos de áudio falado (Google Text-to-Speech).
 
 ---
 
-## 🚀 Como Executar as Dependências no seu Ambiente
+## 🚀 Como Executar no seu Ambiente
 
-Caso mude de máquina ou clone o portfólio em outro computador, você pode rodar a instalação unificada das bibliotecas utilizando o instalador do Python através do terminal:
+Para facilitar a configuração em qualquer máquina, todas as dependências estão listadas no arquivo `requirements.txt`. Siga os passos abaixo para preparar o ambiente:
 
+**1. Clone o repositório e acesse a pasta:**
 ```bash
-# Se o seu pip global estiver configurado nas variáveis de ambiente:
-pip install agno openai python-dotenv yfinance pandas requests beautifulsoup4 gTTS
-
-# Caso utilize um ambiente virtual (.venv) ou precise chamar diretamente o binário do Python:
-python -m pip install agno openai python-dotenv yfinance pandas requests beautifulsoup4 gTTS
+git clone [https://github.com/luizeflss/senai-python-ia.git](https://github.com/luizeflss/senai-python-ia.git)
+cd senai-python-ia
