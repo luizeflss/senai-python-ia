@@ -17,7 +17,7 @@ st.set_page_config(
     page_icon="🪲",
     layout="centered"
     )
-st.title("Virtual Assistant Of FIAT PAlIO FIRE MANUAL")
+st.title("Virtual Assistant Of FIAT PALIO FIRE MANUAL")
 st.write("Como posso ajuda-lo hoje ?")
 
 nvidia_api_key = os.getenv("API_KEY")
