@@ -16,5 +16,6 @@ langchain-huggingface
 langchain-nvidia-ai-endpoints
 sqlalchemy
 pypdf
+tickers
 faiss-cpu
 sentence-transformers
